@@ -10,7 +10,7 @@ public class Test00002 {
 		RemoteWebDriver driver=new ChromeDriver();
 		driver.get("https://chatgpt.com/");
 		driver.manage().window().maximize();
-		Thread.sleep(2000);
+		Thread.sleep(2000);						//wait 2 second before opening next
 		
 		driver.findElement(By.xpath("//div[contains(text(), \"Log in\")]")).click();
 	}
